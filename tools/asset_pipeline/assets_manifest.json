@@ -1,0 +1,104 @@
+{
+  "assets": [
+    {
+      "name": "player_base",
+      "category": "characters",
+      "source": "glTF Sample Assets",
+      "author": "Khronos",
+      "license": "CC0",
+      "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/Box/glTF-Binary/Box.glb",
+      "target_path": "models/characters/player.glb",
+      "sha256": "ed52f7192b8311d700ac0ce80644e3852cd01537e4d62241b9acba023da3d54e"
+    },
+    {
+      "name": "player_base_clone",
+      "category": "derived",
+      "source": "glTF Sample Assets",
+      "author": "Khronos",
+      "license": "CC0",
+      "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/Box/glTF-Binary/Box.glb",
+      "target_path": "models/weapons/rifle.glb",
+      "sha256": "ed52f7192b8311d700ac0ce80644e3852cd01537e4d62241b9acba023da3d54e"
+    },
+    {
+      "name": "player_base_clone",
+      "category": "derived",
+      "source": "glTF Sample Assets",
+      "author": "Khronos",
+      "license": "CC0",
+      "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/Box/glTF-Binary/Box.glb",
+      "target_path": "models/weapons/bow.glb",
+      "sha256": "ed52f7192b8311d700ac0ce80644e3852cd01537e4d62241b9acba023da3d54e"
+    },
+    {
+      "name": "player_base_clone",
+      "category": "derived",
+      "source": "glTF Sample Assets",
+      "author": "Khronos",
+      "license": "CC0",
+      "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/Box/glTF-Binary/Box.glb",
+      "target_path": "models/weapons/grenade.glb",
+      "sha256": "ed52f7192b8311d700ac0ce80644e3852cd01537e4d62241b9acba023da3d54e"
+    },
+    {
+      "name": "player_base_clone",
+      "category": "derived",
+      "source": "glTF Sample Assets",
+      "author": "Khronos",
+      "license": "CC0",
+      "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/Box/glTF-Binary/Box.glb",
+      "target_path": "models/buildings/wood_wall.glb",
+      "sha256": "ed52f7192b8311d700ac0ce80644e3852cd01537e4d62241b9acba023da3d54e"
+    },
+    {
+      "name": "player_base_clone",
+      "category": "derived",
+      "source": "glTF Sample Assets",
+      "author": "Khronos",
+      "license": "CC0",
+      "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/Box/glTF-Binary/Box.glb",
+      "target_path": "models/buildings/stone_wall.glb",
+      "sha256": "ed52f7192b8311d700ac0ce80644e3852cd01537e4d62241b9acba023da3d54e"
+    },
+    {
+      "name": "npc_base",
+      "category": "characters",
+      "source": "glTF Sample Assets",
+      "author": "Microsoft / glTF Sample Assets",
+      "license": "CC0",
+      "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/Fox/glTF-Binary/Fox.glb",
+      "target_path": "models/characters/npc.glb",
+      "sha256": "d97044e701822bac5a62696459b27d7b375aada5de8574ed4362edbba94771f7"
+    },
+    {
+      "name": "deer_base",
+      "category": "animals",
+      "source": "glTF Sample Assets",
+      "author": "Blender Foundation",
+      "license": "CC0",
+      "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/Duck/glTF-Binary/Duck.glb",
+      "target_path": "models/animals/deer.glb",
+      "sha256": "65bf938f54d6073e619e76e007820bbf980cdc3dc0daec0d94830ffc4ae54ab5"
+    },
+    {
+      "name": "deer_base_clone",
+      "category": "derived",
+      "source": "glTF Sample Assets",
+      "author": "Blender Foundation",
+      "license": "CC0",
+      "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/Duck/glTF-Binary/Duck.glb",
+      "target_path": "models/animals/bear.glb",
+      "sha256": "65bf938f54d6073e619e76e007820bbf980cdc3dc0daec0d94830ffc4ae54ab5"
+    },
+    {
+      "name": "wolf_base",
+      "category": "animals",
+      "source": "glTF Sample Assets",
+      "author": "Cesium",
+      "license": "CC0",
+      "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/CesiumMilkTruck/glTF-Binary/CesiumMilkTruck.glb",
+      "target_path": "models/animals/wolf.glb",
+      "sha256": "09371b34608116de5842d23abe260bf11acf3e1554daf334a647eb566eee5c49"
+    }
+  ]
+}

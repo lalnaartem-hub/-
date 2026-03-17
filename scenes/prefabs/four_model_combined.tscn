@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" path="res://models/characters/player.glb" id="1_player"]
+[ext_resource type="PackedScene" path="res://models/characters/npc.glb" id="2_npc"]
+[ext_resource type="PackedScene" path="res://models/animals/deer.glb" id="3_deer"]
+[ext_resource type="PackedScene" path="res://models/animals/wolf.glb" id="4_wolf"]
+
+[node name="FourModelCombined" type="Node3D"]
+
+[node name="PlayerModel" parent="." instance=ExtResource("1_player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="NpcModel" parent="." instance=ExtResource("2_npc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="DeerModel" parent="." instance=ExtResource("3_deer")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="WolfModel" parent="." instance=ExtResource("4_wolf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)

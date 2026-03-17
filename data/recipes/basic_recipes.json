@@ -1,0 +1,16 @@
+{
+  "stone_hatchet": {
+    "ingredients": [
+      {"id": "wood", "count": 50},
+      {"id": "stone", "count": 40}
+    ],
+    "result": {"id": "stone_hatchet", "count": 1}
+  },
+  "campfire": {
+    "ingredients": [
+      {"id": "wood", "count": 100},
+      {"id": "stone", "count": 20}
+    ],
+    "result": {"id": "campfire", "count": 1}
+  }
+}
