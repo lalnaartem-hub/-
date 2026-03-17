@@ -27,7 +27,7 @@ func generate_world(optional_seed: int = -1) -> Dictionary:
 
 func _generate_spawn_zones(size_km: int) -> Array[Vector3]:
 	var result: Array[Vector3] = []
-	for _i: int in range(16):
+	for _i in range(16):
 		var px: float = rng.randf_range(-size_km * 500.0, size_km * 500.0)
 		var pz: float = rng.randf_range(-size_km * 500.0, size_km * 500.0)
 		result.append(Vector3(px, 0.0, pz))

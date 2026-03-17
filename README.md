@@ -35,3 +35,11 @@ python3 tools/asset_pipeline/import_assets.py --dry-run
 - `models/`, `textures/` generated locally (git-ignored binaries)
 - `data/` recipes, balance, AI, world spawn settings
 - `docs/` architecture and extension guides
+
+## Where are GLB models and animations
+After running `bash tools/setup_local_assets.sh`, models are created locally in:
+- `models/characters/player.glb`, `models/characters/npc.glb`
+- `models/animals/deer.glb`, `models/animals/wolf.glb`, `models/animals/bear.glb`
+- `models/weapons/*.glb`, `models/buildings/*.glb`
+
+Animation placeholders are in `animations/characters/` (`walk.anim`, `run.anim`, `attack.anim`).
