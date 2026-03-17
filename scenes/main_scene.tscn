@@ -1,0 +1,60 @@
+[gd_scene load_steps=13 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/world_generator.gd" id="1_wgen"]
+[ext_resource type="Script" path="res://scripts/player/player_controller.gd" id="2_player"]
+[ext_resource type="Script" path="res://scripts/systems/survival_system.gd" id="3_survival"]
+[ext_resource type="Script" path="res://scripts/world/resource_spawner.gd" id="4_spawner"]
+[ext_resource type="Script" path="res://scripts/environment/day_night_cycle.gd" id="5_day"]
+[ext_resource type="Script" path="res://scripts/environment/weather_controller.gd" id="6_weather"]
+[ext_resource type="PackedScene" path="res://scenes/prefabs/four_model_combined.tscn" id="7_pack"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_1"]
+sky_horizon_color = Color(0.58, 0.75, 1, 1)
+
+[sub_resource type="Sky" id="Sky_1"]
+sky_material = SubResource("ProceduralSkyMaterial_1")
+
+[sub_resource type="Environment" id="Environment_1"]
+background_mode = 2
+sky = SubResource("Sky_1")
+tonemap_mode = 2
+sdfgi_enabled = true
+glow_enabled = true
+ssao_enabled = true
+
+[node name="Main" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_1")
+
+[node name="SunLight" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.866025, -0.5, 0, 0.482963, 0.836516, -0.258819, 0.12941, 0.224144, 0.965926, 0, 20, 0)
+light_energy = 2.4
+shadow_enabled = true
+
+[node name="WorldGenerator" type="Node3D" parent="."]
+script = ExtResource("1_wgen")
+
+[node name="ResourceSpawner" type="Node3D" parent="."]
+script = ExtResource("4_spawner")
+
+[node name="DayNightCycle" type="Node3D" parent="."]
+script = ExtResource("5_day")
+
+[node name="WeatherController" type="Node" parent="."]
+script = ExtResource("6_weather")
+
+[node name="Player" type="CharacterBody3D" parent="."]
+script = ExtResource("2_player")
+
+[node name="CameraPivot" type="Node3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.65, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Player/CameraPivot"]
+current = true
+fov = 85.0
+
+[node name="SurvivalSystem" type="Node" parent="."]
+script = ExtResource("3_survival")
+
+[node name="CoreModelPack" parent="." instance=ExtResource("7_pack")]

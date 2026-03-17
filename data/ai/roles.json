@@ -1,0 +1,6 @@
+{
+  "hunter": {"aggression": 0.8, "gathering": 0.4, "building": 0.2},
+  "builder": {"aggression": 0.3, "gathering": 0.8, "building": 0.9},
+  "defender": {"aggression": 0.7, "gathering": 0.3, "building": 0.5},
+  "farmer": {"aggression": 0.2, "gathering": 0.9, "building": 0.4}
+}

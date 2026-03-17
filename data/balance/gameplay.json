@@ -1,0 +1,6 @@
+{
+  "resource_gather_multiplier": 1.0,
+  "weapon_damage_multiplier": 1.0,
+  "building_health_multiplier": 1.0,
+  "raid_frequency_minutes": 60
+}

@@ -1,0 +1,40 @@
+{
+  "assets": [
+    {
+      "name": "player_base",
+      "category": "characters",
+      "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/Box/glTF-Binary/Box.glb",
+      "license": "CC0",
+      "author": "Khronos",
+      "source": "glTF Sample Assets",
+      "target_path": "models/characters/player.glb"
+    },
+    {
+      "name": "npc_base",
+      "category": "characters",
+      "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/Fox/glTF-Binary/Fox.glb",
+      "license": "CC0",
+      "author": "Microsoft / glTF Sample Assets",
+      "source": "glTF Sample Assets",
+      "target_path": "models/characters/npc.glb"
+    },
+    {
+      "name": "deer_base",
+      "category": "animals",
+      "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/Duck/glTF-Binary/Duck.glb",
+      "license": "CC0",
+      "author": "Blender Foundation",
+      "source": "glTF Sample Assets",
+      "target_path": "models/animals/deer.glb"
+    },
+    {
+      "name": "wolf_base",
+      "category": "animals",
+      "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/CesiumMilkTruck/glTF-Binary/CesiumMilkTruck.glb",
+      "license": "CC0",
+      "author": "Cesium",
+      "source": "glTF Sample Assets",
+      "target_path": "models/animals/wolf.glb"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+# Generated binary assets (download locally)
+models/**/*.glb
+textures/materials/*.png
+
+# Python cache
+__pycache__/
+*.pyc
