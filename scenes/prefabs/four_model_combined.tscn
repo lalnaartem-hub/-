@@ -1,0 +1,53 @@
+[gd_scene load_steps=9 format=3]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_player"]
+albedo_color = Color(0.2, 0.7, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_npc"]
+albedo_color = Color(0.3, 1, 0.4, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_deer"]
+albedo_color = Color(0.65, 0.45, 0.2, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wolf"]
+albedo_color = Color(0.7, 0.7, 0.75, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_player"]
+material = SubResource("StandardMaterial3D_player")
+size = Vector3(0.8, 1.8, 0.6)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_npc"]
+material = SubResource("StandardMaterial3D_npc")
+mid_height = 1.1
+radius = 0.35
+
+[sub_resource type="SphereMesh" id="SphereMesh_deer"]
+material = SubResource("StandardMaterial3D_deer")
+radial_segments = 32
+rings = 16
+radius = 0.5
+height = 1.0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_wolf"]
+material = SubResource("StandardMaterial3D_wolf")
+top_radius = 0.32
+bottom_radius = 0.35
+height = 1.0
+
+[node name="FourModelCombined" type="Node3D"]
+
+[node name="PlayerModel" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0.9, 0)
+mesh = SubResource("BoxMesh_player")
+
+[node name="NpcModel" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.9, 0)
+mesh = SubResource("CapsuleMesh_npc")
+
+[node name="DeerModel" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, 0)
+mesh = SubResource("SphereMesh_deer")
+
+[node name="WolfModel" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.5, 0)
+mesh = SubResource("CylinderMesh_wolf")

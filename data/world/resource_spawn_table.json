@@ -1,0 +1,7 @@
+{
+  "wood": {"density": 0.85, "respawn_sec": 900},
+  "stone": {"density": 0.6, "respawn_sec": 1200},
+  "metal_ore": {"density": 0.25, "respawn_sec": 1800},
+  "berries": {"density": 0.5, "respawn_sec": 600},
+  "mushrooms": {"density": 0.35, "respawn_sec": 700}
+}
